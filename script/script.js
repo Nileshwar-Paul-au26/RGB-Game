@@ -89,3 +89,11 @@ function pickColor() {
     var random = Math.floor(Math.random() * colors.length);
     return colors[random];
 }
+//generate random colors
+function generateColors(num) {
+    var arr = [];
+    for (var i = 0; i < num; i++) {
+        arr.push(randomColor());
+    }
+    return arr;
+}
