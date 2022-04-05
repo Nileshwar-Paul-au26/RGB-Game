@@ -83,3 +83,9 @@ function changeColors(color) {
     }
     h1.style.background = color;
 }
+
+//pick random color from generated colors
+function pickColor() {
+    var random = Math.floor(Math.random() * colors.length);
+    return colors[random];
+}
