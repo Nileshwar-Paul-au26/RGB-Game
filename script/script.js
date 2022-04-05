@@ -66,3 +66,10 @@ function reset() {
     //resetting h1 color too after resetting
     h1.style.background = "steelblue";
 }
+
+//reset button..
+resetButton.addEventListener("click", function () {
+    reset();
+    //resetting h1 color too after resetting
+    h1.style.background = "steelblue";
+});
