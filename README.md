@@ -1,2 +1,2 @@
 # RGB-Game
-[Link to The Game](https://my-rgb-game.netlify.app/)
+[Click to Play the Game](https://my-rgb-game.netlify.app/)
