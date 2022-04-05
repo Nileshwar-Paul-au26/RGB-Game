@@ -43,3 +43,26 @@ function init() {
 
     reset();
 }
+
+function reset() {
+    //generate all new colors
+    colors = generateColors(numSquares);
+    //pick new correct color from array
+    pickedColor = pickColor();
+    //change color display
+    colorDisplay.textContent = pickedColor;
+    messageDisplay.textContent = "";
+    resetButton.textContent = "New Colors!";
+    // change the colors of all squares
+    for (var i = 0; i < squares.length; i++) {
+        if (colors[i]) {
+            squares[i].style.display = "block";
+            squares[i].style.background = colors[i];
+        }
+        else {
+            squares[i].style.display = "none";
+        }
+    }
+    //resetting h1 color too after resetting
+    h1.style.background = "steelblue";
+}
