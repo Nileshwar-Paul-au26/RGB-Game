@@ -73,3 +73,13 @@ resetButton.addEventListener("click", function () {
     //resetting h1 color too after resetting
     h1.style.background = "steelblue";
 });
+
+//change colors of the squares
+function changeColors(color) {
+    //loop through all squares
+    //change the color
+    for (var i = 0; i < squares.length; i++) {
+        squares[i].style.background = color;
+    }
+    h1.style.background = color;
+}
