@@ -97,3 +97,11 @@ function generateColors(num) {
     }
     return arr;
 }
+//random R G B channels
+function randomColor() {
+    //pick 0 - 255 for all 3 channels, RGB
+    var red = Math.floor(Math.random() * 256);
+    var green = Math.floor(Math.random() * 256);
+    var blue = Math.floor(Math.random() * 256);
+    return "rgb(" + red + ", " + green + ", " + blue + ")";
+}
